@@ -2,13 +2,14 @@ import Image from 'next/image'
 
 export default function Home() {
 	return (
-		<main className='bg-[#e5f0f8] flex min-h-screen flex-col items-center justify-center p-24 ${inter.className}'>
-			<div className='flex items-center justify-center'>
+		<main className='bg-[#e5f0f8] flex min-h-screen flex-col items-center justify-center p-6 lg:p-24 ${inter.className}'>
+			<div className='flex-col lg:flex lg:flex-row items-center justify-center'>
 				<Image
 					src='/avinash-2.jpeg'
 					alt='Picture of Avinash'
 					width={182}
 					height={182}
+					className='w-full lg:w-fit'
 				/>
 				<div className='h-full w-full '>
 					<h1 className='text-[#0065bd] font-black px-4 py-3 text-5xl uppercase'>
@@ -35,9 +36,11 @@ export default function Home() {
 				vote for a better halls experience!
 			</p>
 
-			<a href='https://www.strathunion.com/elections/candidates/36/#:~:text=honorarium%20of%20%C2%A3600.-,Avinash%20Ethiraj,-Gayatri%20Vijay%20Kale'>
-				<button className='uppercase bg-[#0065bd] px-5 py-4 mt-12'>
-					Vote now!
+			<a
+				className='w-full lg:w-fit'
+				href='https://www.strathunion.com/elections/candidates/36/#:~:text=honorarium%20of%20%C2%A3600.-,Avinash%20Ethiraj,-Gayatri%20Vijay%20Kale'>
+				<button className='uppercase bg-[#0065bd] px-5 py-4 mt-12 w-full'>
+					Vote now !
 				</button>
 			</a>
 		</main>
